@@ -1,0 +1,4 @@
+//@version=5
+indicator("3-Hour Intervals Marker", overlay = true)
+// Calculate 3-hour intervals
+plotshape((hour(time) % 3 == 0), style=shape.labelup, location=location.belowbar, color=color.new(color.blue, 0), text="3H", textcolor=color.white, size=size.small)
